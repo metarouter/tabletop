@@ -19,8 +19,7 @@
   "gitHead": "fdb1c3ee3bc0f7f3be6ab223a56f9f050fe32496",
   "dependencies": {
     "grunt": "*",
-    "grunt-contrib-connect": "*",
-    "request": "^2.40.0"
+    "grunt-contrib-connect": "*"
   },
   "engines": {
     "node": ">=0.10.0"
