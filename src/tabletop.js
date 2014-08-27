@@ -106,7 +106,11 @@
 
     this.base_json_path = "/feeds/worksheets/" + this.key + "/public/basic?alt=";
 
-    this.base_json_path += 'json-in-script';
+    if (supportsCORS) {
+      this.base_json_path += 'json';
+    } else {
+      this.base_json_path += 'json-in-script';
+    }
 
     if(!this.wait) {
       this.fetch();
